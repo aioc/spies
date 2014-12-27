@@ -2,7 +2,7 @@ package com.ausinformatics.spies;
 
 import java.util.List;
 
-import core.interfaces.PersistentPlayer;
+import com.ausinformatics.phais.core.interfaces.PersistentPlayer;
 
 public class KilledGameEvent implements GameEvent {
 	

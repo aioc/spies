@@ -17,7 +17,7 @@ import java.util.Queue;
 
 import javax.sound.sampled.Clip;
 
-import core.interfaces.PersistentPlayer;
+import com.ausinformatics.phais.core.interfaces.PersistentPlayer;
 
 public class GameVisualiser {
 	private static final int DEFAULT_FRAMES_PER_STATE = 5;
