@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 public class Position {
 	public int r, c;

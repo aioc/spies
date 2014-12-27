@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.util.List;
 
@@ -14,7 +14,6 @@ public class KilledGameEvent implements GameEvent {
 		this.killed = killed;
 	}
 
-	@Override
 	public String getRepresentation(List<PersistentPlayer> players) {
 		return players.get(killer).getName() + " killed " + players.get(killed).getName();
 	}

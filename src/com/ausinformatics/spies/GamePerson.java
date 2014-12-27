@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 /**
  * Represents the current state of a particular player.

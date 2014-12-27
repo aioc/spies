@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.awt.Color;
 import java.awt.Font;

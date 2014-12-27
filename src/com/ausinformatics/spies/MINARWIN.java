@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.io.BufferedInputStream;
 import java.util.ArrayList;
@@ -28,7 +28,6 @@ public class MINARWIN implements ClientConnection {
 		connected = true;
 	}
 	
-	@Override
 	public void sendInfo(String s) {
 		// No need for their info
 		preString = s;
@@ -37,12 +36,10 @@ public class MINARWIN implements ClientConnection {
 		}
 	}
 
-	@Override
 	public void sendInfo(int i) {
 		// See above
 	}
 
-	@Override
 	public String getStrInput() throws DisconnectedException {
 		if (mustSend.length() > 0) {
 			return "ACTION " + mustSend;
@@ -64,23 +61,19 @@ public class MINARWIN implements ClientConnection {
 		return "ACTION " + getMove(gp);
 	}
 
-	@Override
 	public int getIntInput() throws DisconnectedException {
 		return 0;
 	}
 
-	@Override
 	public void disconnect() {
 		// IN SOVIET RUSSIA, CLIENT DISCONNECTS YOU
 		//System.exit(1);
 	}
 
-	@Override
 	public boolean isConnected() {
 		return connected;
 	}
 
-	@Override
 	public boolean checkConnected() {
 		return true;
 	}
@@ -93,7 +86,6 @@ public class MINARWIN implements ClientConnection {
 	private String getMove(GamePerson gp[]) {
 		// Compute what happens for each move
 		// Evaluate goodness
-		long timeS = System.currentTimeMillis();
 		String moves = "^>v<()S-";
 		int best = -1000000000;
 		List<String> bestMoves = new ArrayList<String>();

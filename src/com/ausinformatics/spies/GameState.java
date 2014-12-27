@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.util.ArrayList;
 import java.util.List;

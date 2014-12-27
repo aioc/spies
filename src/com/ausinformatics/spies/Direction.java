@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 public enum Direction {
 	UP(0),

@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 public class Pair<L, R> {
 	private L l;

@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.util.List;
 import java.util.Random;
@@ -13,7 +13,6 @@ public class GameFactory implements GameBuilder {
 	private int boardSize = 8;
 	private int startingHealth = 5;
 
-	@Override
 	public GameInstance createGameInstance(List<PersistentPlayer> players) {
 		int randKey = new Random().nextInt();
 		for (int i = 0; i < players.size(); i++) {

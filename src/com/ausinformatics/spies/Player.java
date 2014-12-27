@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.util.Random;
 
@@ -19,12 +19,10 @@ public class Player implements PersistentPlayer {
 		this.connection = connection;
 	}
 	
-	@Override
 	public int getID() {
 		return ID;
 	}
 
-	@Override
 	public String getName() {
 		if (name == null) {
 			generateNewName();
@@ -32,7 +30,6 @@ public class Player implements PersistentPlayer {
 		return name;
 	}
 
-	@Override
 	public void generateNewName() {
 		if (name == null) {
 			connection.sendInfo("NAME");
@@ -91,7 +88,6 @@ public class Player implements PersistentPlayer {
 	}
 	
 
-	@Override
 	public ClientConnection getConnection() {
 		return connection;
 	}

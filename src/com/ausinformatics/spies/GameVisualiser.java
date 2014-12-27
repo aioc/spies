@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -10,13 +10,11 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import javax.imageio.ImageIO;
 import javax.sound.sampled.Clip;
 
 import core.interfaces.PersistentPlayer;
@@ -236,15 +234,6 @@ public class GameVisualiser {
 			            }
 			        ).start();
 			}
- 			if (false) {
-				BufferedImage img = null;
-				try {
-					img = ImageIO.read(this.getClass().getResource(
-							"/resources/evgeny.png"));
-				} catch (IOException e) {
-					// This ain't going to happen.
-				}
- 			}
 		}
 		/*
 		 * END HACKING CODE

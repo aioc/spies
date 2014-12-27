@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.util.List;
 
@@ -12,7 +12,6 @@ public class HealGameEvent implements GameEvent {
 		this.healer = healer;
 	}
 
-	@Override
 	public String getRepresentation(List<PersistentPlayer> players) {
 		return players.get(healer).getName() + " healed!";
 	}

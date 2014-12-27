@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -70,7 +70,6 @@ public class GameRunner implements GameInstance {
 		}
 	}
 
-	@Override
 	public void begin() {
 		int roundCount = 0;
 		while (results.size() < players.size() - 1 && roundCount < ROUND_LIMIT) {
@@ -145,17 +144,14 @@ public class GameRunner implements GameInstance {
 		}
 	}
 
-	@Override
 	public void getVisualisation(Graphics g, int width, int height) {
 		visualiser.visualise((Graphics2D) g, width, height);
 	}
 
-	@Override
 	public void handleWindowResize(int width, int height) {
 		visualiser.handleWindowResize(width, height);
 	}
 
-	@Override
 	public Map<PersistentPlayer, Integer> getResults() {
 		return results;
 	}
@@ -164,7 +160,6 @@ public class GameRunner implements GameInstance {
 		return 1 << (players.size() - pos - 1);
 	}
 
-	@Override
 	public void windowClosed() {
 	}
 }

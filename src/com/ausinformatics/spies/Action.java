@@ -1,4 +1,4 @@
-package games.spies;
+package com.ausinformatics.spies;
 
 import core.server.ClientConnection;
 import core.server.DisconnectedException;
